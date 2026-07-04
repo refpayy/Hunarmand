@@ -1,0 +1,24 @@
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
+import { useLang } from "../LangContext";
+
+export default function WalletScreen() {
+  const { t } = useLang();
+  return (
+    <View style={{ flex: 1, backgroundColor: "#fff" }}>
+      <LinearGradient colors={["#007A33", "#00C851"]} style={styles.card}>
+        <Text style={styles.label}>Balance</Text>
+        <Text style={styles.balance}>Rs. 0</Text>
+      </LinearGradient>
+      <Text style={styles.empty}>Wallet history khali hai</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  card: { margin: 20, borderRadius: 20, padding: 24, marginTop: 60 },
+  label: { color: "rgba(255,255,255,0.8)", fontSize: 13 },
+  balance: { color: "#fff", fontSize: 32, fontWeight: "900", marginTop: 6 },
+  empty: { textAlign: "center", color: "#8A94A6", marginTop: 20 },
+});
