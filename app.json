@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "HUNARMAND",
+    "slug": "hunarmand",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#00C851"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": { "supportsTablet": true },
+    "android": {
+      "package": "com.hunarmand.app",
+      "adaptiveIcon": { "backgroundColor": "#00C851" }
+    }
+  }
+}
